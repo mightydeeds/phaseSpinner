@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>phaseSpinner</title>
+
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="phaseSpinner.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="phaseSpinner.css">
+		<style type="text/css">
+			.spinner{
+				width:100px;
+				height:100px;
+				margin:10px;
+				border:1px solid orange;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<h1>phaseSpinner</h1>
+
+		<div class="spinner"></div>
+
+		<div class="spinner"></div>
+
+		<script>
+			$(function(){
+				var elm = $('.spinner');
+				
+				elm.phaseSpinner({
+					"color":"black",
+					"size":400,
+					"number":16
+				});
+
+			});
+		</script>
+
+	</body>
+</html>

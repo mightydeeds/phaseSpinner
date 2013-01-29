@@ -1,0 +1,45 @@
+
+
+	.phaseSpinner{
+
+	}
+
+	.phaseSpinner .spin_dot{
+		position:absolute;
+	}
+
+	.phaseSpinner .load_bar{
+		position:absolute;
+		left:0;
+		animation:spin 3000ms infinite linear;
+		-moz-animation:spin 3000ms infinite linear; 
+		-webkit-animation:spin 3000ms infinite linear;
+	}
+
+
+	@-moz-keyframes spin {
+		0% { 
+			-moz-transform: rotate(0deg);
+		}
+		100%   { 
+			-moz-transform: rotate(-360deg);
+		}
+	}
+
+	@-webkit-keyframes spin {
+		0% { 
+			-webkit-transform: rotate(0deg);
+		}
+		100%   { 
+			-webkit-transform: rotate(-360deg);
+		}
+	}
+
+	@keyframes spin {
+		0% { 
+			transform: rotate(0deg);
+		}
+		100%   { 
+			transform: rotate(-360deg);
+		}
+	}
